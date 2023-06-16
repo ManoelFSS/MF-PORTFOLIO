@@ -1,7 +1,7 @@
 .banner{
     display: flex;
     flex-wrap: wrap-reverse;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     width: 100%;
 }
 
@@ -70,7 +70,8 @@
     width: 350px;
     height: 350px;
     border-radius: 50% ;
-    animation: border_animation 0.4s alternate-reverse infinite;
+    animation: border_animation 1s ease-in infinite;
+    border: solid 2px var(--color--border);
 }
 
 @media(max-width:970px){
@@ -79,6 +80,7 @@
         height:240px;
     }
 }
+
 
 @media(max-width:902px){
     .container_right {
@@ -95,6 +97,39 @@
     }
 }
 
+@media(min-width:662px) and (max-width:662px){
+    .container_right img {
+        width: 180px;
+        height:180px;
+    }
+
+    .container_right {
+        min-width: 300px;
+    }
+
+    .container_left{
+        justify-content:center;
+        min-width: 300px;
+    }
+
+    .banner_text_area h3{
+        font-size: 1rem;
+    }
+    .banner_text_area h1{
+        font-size: 1.4rem;
+     
+    }
+    .banner_text_area p{ 
+        font-size: 1.5rem;
+    }
+    .banner_btns_area{
+        padding-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
 @media(max-width:458px){
     .container_right {
         min-width: 290px;
@@ -106,8 +141,8 @@
 
 @media(max-width:440px){
     .container_right img {
-        width: 140px;
-        height:140px;
+        width: 200px;
+        height:200px;
     }
     .banner_text_area h3{
         font-size: 1rem;
@@ -138,20 +173,19 @@
 
 @keyframes border_animation {
     0%{
-        box-shadow: 0px 0px 0px 20px #ffffff; 
+        box-shadow: 0px 0px 10px  #ff7b00; 
     }
     30%{
-        box-shadow: 0px 0px 0px 20px #ffffff, 0px 0px 0px 25px #ff7b00; 
+        box-shadow:0px 0px 20px 5px#ff7d03f1; 
     }
     59%{
-        box-shadow:0px 0px 0px 20px #ffffff, 0px 0px 0px 25px #ff7b00 ,0px 0px 0px 55px #ffffff;
-        
+        box-shadow: 0px 0px 35px  #ff7b00e3 ;
     }
     60%{
-        box-shadow:0px 0px 0px 20px #ffffff, 0px 0px 0px 25px #ff7b00 ,0px 0px 0px 55px #ffffff, 0px 0px 0px 60px #ff7b00 ;
+        box-shadow: 0px 0px 50px 5px #ff7c02cc ;
     }
   
     100%{
-        box-shadow:0px 0px 0px 20px #ffffff, 0px 0px 0px 25px #ff7b00 ,0px 0px 0px 55px #ffffff, 0px 0px 0px 60px #ff7b00 ;
+        box-shadow:0px 0px 60px  #ff7b00d7 ;
     }
 }
