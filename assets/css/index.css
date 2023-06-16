@@ -1,0 +1,26 @@
+:root {
+    --color--black:#000000;
+    --color--white:#fff;
+    --menu--color--ativo:#FF7A00;
+    --title:#FF7A00;
+    --color--border:#FF7A00;
+    --backg--color--btn:#FF7A00;
+    --backg--color:#fff;
+    --font--family--logo:'Stalinist One';
+    --font--global--page:'Roboto', sans-serif;
+  
+  }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font--global--page);
+}
+
+nav{
+    display: none;
+}
+
+
+ 
