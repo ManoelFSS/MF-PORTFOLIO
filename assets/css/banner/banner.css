@@ -158,6 +158,9 @@
         width: 200px;
         height:200px;
     }
+    .banner_text_area{
+        text-align: center;
+    }
     .banner_text_area h3{
         font-size: 1.4rem;
     }
