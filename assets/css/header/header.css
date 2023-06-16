@@ -6,6 +6,55 @@ header{
     position: relative;
   }
 
+  .menu_mobile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url(https://th.bing.com/th/id/OIP.3MFacdDKkXvoMuj9fOsZCgAAAA?pid=ImgDet&w=193&h=193&c=7) no-repeat center / cover ;
+    display: none;
+  }
+
+  .toggle_dark{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    box-shadow:  0px 1.5px 3px 1px #000 ;
+    background-color: #ff7700;
+  
+  }
+
+  @media(max-width:630px){
+    .menu_mobile{
+      display:flex;
+    }
+    .toggle_dark{
+      position: absolute;
+      right: 100px;
+    }
+  }
+
+  .toggle_icone{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #000, 0px 0px 10px #FF7A00;
+    cursor: pointer;
+    background: var(--meu-sol-after-background) ;
+    transition: all 0.4s;
+  }
+
+  .toggle_icone:hover{
+    box-shadow: 2px 2px 5px #000, 0px 0px 10px #ff7700, 0px 0px 30px #ff8800cc ;
+  }
+
+  .toggle_icone_fundo{
+    background:url(../../image/lua.jpeg) no-repeat center / cover;
+    margin-left: 20px;
+
+  }
+
   header .sobre {
     position: absolute;
     bottom: 20px;
@@ -61,6 +110,7 @@ header{
     width: 100%;
     padding: 0px 30px;
     border-bottom: 3px solid var(--color--border);
+    position: relative;
   }
 
   .nav_bar .logo{
@@ -68,20 +118,24 @@ header{
     text-shadow: 1px 3px 3px #000000bb;
     font-size: 2rem;
     letter-spacing: 5px;
+
   }
 
+  .ativo{
+    color: var(--menu--color--ativo);
+  }
+  
   .nav_bar ul, ul a{
     display: flex;
     list-style: none;
     text-decoration: none;
     font-weight: 900;
-    color: var(--color--black);
+    color: var(--color--sinze);
     font-size: 1rem;
     gap: 30px;
     letter-spacing: 1.4px;
     cursor: pointer;
   }
-  .ativo{
-    color: var(--menu--color--ativo);
-  }
+ 
+
 

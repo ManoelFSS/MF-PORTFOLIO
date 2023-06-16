@@ -14,7 +14,7 @@
     min-width: 450px;
 }
 .banner_text_area h3{
-    color: var(--color--black);
+    color: var(--color--sinze);
     font-size: 1.4rem;
     font-weight:bolder;
 }
@@ -24,7 +24,7 @@
     font-weight:bolder;
 }
 .banner_text_area p{ 
-    color: var(--color--black);
+    color: var(--color--sinze);
     font-size: 2rem;
     font-weight:500;
 }
@@ -71,7 +71,7 @@
     width: 350px;
     height: 350px;
     border-radius: 50% ;
-    animation: border_animation 1s ease-in infinite;
+    animation: border_animation 1s alternate-reverse infinite;
     border: solid 2px var(--color--border);
 }
 
