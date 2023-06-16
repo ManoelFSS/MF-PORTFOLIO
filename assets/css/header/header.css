@@ -85,12 +85,3 @@ header{
     color: var(--menu--color--ativo);
   }
 
-  @media(max-width:430px){
-    header .icone_nave{
-      bottom: 85px;
-    }
-    header .sobre {
-      bottom: 70px;
-    }
-  }
-
