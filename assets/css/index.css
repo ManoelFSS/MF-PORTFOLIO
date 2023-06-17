@@ -1,6 +1,6 @@
 :root {
     --color--black:#000000;
-    --color--sinze:#505050;
+    --color--sinze:#707070;
     --color--white:#fff;
     --color--lorange:#FF7A00;
     --menu--color--ativo:#FF7A00;
@@ -19,6 +19,8 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: var(--font--global--page);
+    outline: none;
+    user-select: none;
 }
 
 body{

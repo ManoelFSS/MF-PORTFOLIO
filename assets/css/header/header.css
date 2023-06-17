@@ -138,7 +138,7 @@ header{
     list-style: none;
     text-decoration: none;
     font-weight: 900;
-    color: var(--color--sinze);
+    color: var( --color--sinze);
     font-size: 1rem;
     gap: 30px;
     letter-spacing: 1.4px;

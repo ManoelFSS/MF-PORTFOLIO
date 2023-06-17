@@ -1,4 +1,4 @@
-
+// seleçao de class
 const icone_nave = document.querySelector('.icone_nave');
 const modal_sobre = document.querySelector('.modal_sobre');
 const toggle_icone = document.querySelector('.toggle_icone');
@@ -9,6 +9,7 @@ const link = document.querySelectorAll('.nav_bar a');
 const nav = document.querySelector('nav');
 const menu_mobile = document.querySelector('.menu_mobile');
 
+// btn nave e funçao abre e fecha modal
 icone_nave.addEventListener('click', ()=>{
     
     if(modal_sobre.style.height === ""){
@@ -18,11 +19,12 @@ icone_nave.addEventListener('click', ()=>{
         modal_sobre.style.height = ""
         icone_nave.style.bottom = '40px';
     }
-
+    // funçao executa animaçao rotaçao do btn da nave
     setTimeout( ()=> icone_nave.classList.toggle('nave_rotate'), 600);
 
 });
 
+ // btn dark model  ativa / desativa
 toggle_icone.addEventListener('click', ()=>{
     nav_bar.classList.toggle('dark_model');
     nav.classList.toggle('dark_model');
@@ -31,6 +33,7 @@ toggle_icone.addEventListener('click', ()=>{
 
 });
 
+// btn toggle abre e fecha menu
 menu_mobile.addEventListener('click', ()=>{
 
     menu_mobile.classList.toggle("menu_toggle");
