@@ -156,15 +156,13 @@
     .container_right img {
         width: 180px;
         height:180px;
+
     }
 }
 
 @media(max-width:458px){
     .container_right {
         min-width: 290px;
-        height: 35vh;
-        align-items: flex-end;
-
     }
     .container_left{
         min-width: 290px; 

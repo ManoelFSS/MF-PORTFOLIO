@@ -24,7 +24,8 @@ icone_nave.addEventListener('click', ()=>{
 });
 
 toggle_icone.addEventListener('click', ()=>{
-   nav_bar.classList.toggle('dark_model');
+    nav_bar.classList.toggle('dark_model');
+    nav.classList.toggle('dark_model');
     toggle_icone.classList.toggle('toggle_icone_fundo');
     body.classList.toggle('dark_model');
 
