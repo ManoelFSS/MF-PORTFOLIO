@@ -11,7 +11,7 @@ const menu_mobile = document.querySelector('.menu_mobile');
 
 // btn nave e funçao abre e fecha modal
 icone_nave.addEventListener('click', ()=>{
-    
+   
     if(modal_sobre.style.height === ""){
         modal_sobre.style.height = "calc(100vh - 50px";
         icone_nave.style.bottom = "calc(100vh - 150px";
@@ -30,6 +30,7 @@ toggle_icone.addEventListener('click', ()=>{
     nav.classList.toggle('dark_model');
     toggle_icone.classList.toggle('toggle_icone_fundo');
     body.classList.toggle('dark_model');
+    modal_sobre.classList.toggle('dark_model')
 
 });
 
