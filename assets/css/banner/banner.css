@@ -101,7 +101,10 @@
     }
 }
 
-@media(min-width:662px) and (max-width:779px){
+@media(min-width:600px) and (max-width:779px){
+    .banner{
+        padding-top: 20px;
+    }
     .container_right img {
         width: 180px;
         height:180px;
@@ -133,10 +136,15 @@
     }
 }
 
-@media(max-width:661px){
+@media(max-width:599px){
 
     .container_left{
         justify-content: flex-start;
+    }
+ 
+    .container_right img {
+        width: 180px;
+        height:180px;
     }
 }
 
@@ -152,7 +160,7 @@
 @media(max-width:440px){
 
     .banner{
-        height: calc(100vh - 100px);
+        height: calc(100vh - 50px);
     }
     .container_right img {
         width: 200px;

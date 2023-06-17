@@ -5,6 +5,8 @@ const toggle_icone = document.querySelector('.toggle_icone');
 const toggle_dark = document.querySelector('.toggle_dark');
 const body = document.querySelector('body');
 const link = document.querySelector('.nav_bar a');
+const nav = document.querySelector('nav');
+const menu_mobile = document.querySelector('.menu_mobile');
 
 icone_nave.addEventListener('click', ()=>{
     
@@ -23,4 +25,14 @@ toggle_icone.addEventListener('click', ()=>{
     toggle_icone.classList.toggle('toggle_icone_fundo');
     body.classList.toggle('dark_model');
 
-})
+});
+
+menu_mobile.addEventListener('click', ()=>{
+    menu_mobile.classList.toggle("menu_toggle")
+    if( nav.style.right == '0px'){
+        nav.style.right = '-180px'
+    }else{
+        nav.style.right = '0px'
+    }
+   
+});

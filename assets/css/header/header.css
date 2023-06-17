@@ -12,6 +12,12 @@ header{
     border-radius: 50%;
     background: url(https://th.bing.com/th/id/OIP.3MFacdDKkXvoMuj9fOsZCgAAAA?pid=ImgDet&w=193&h=193&c=7) no-repeat center / cover ;
     display: none;
+    transition: all 0.4s;
+    box-shadow:  0px 1.5px 3px 1px #000 ;
+  }
+
+  .menu_toggle{
+    background: url(../../image/icone_x.png) no-repeat center / cover ;
   }
 
   .toggle_dark{
@@ -107,10 +113,13 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     padding: 0px 30px;
     border-bottom: 3px solid var(--color--border);
-    position: relative;
+    position: fixed;
+    z-index: 9;
+    background-color: aliceblue;
+
   }
 
   .nav_bar .logo{
@@ -136,6 +145,34 @@ header{
     letter-spacing: 1.4px;
     cursor: pointer;
   }
+
+  @media(max-width:630px){
+    nav{
+        display:flex;
+        justify-content: center;
+        position:fixed;
+        width: 160px;
+        height: calc(100vh - 50px);
+        right: -160px;
+        top: 50px;
+        background-color: rgba(255, 255, 255, 0.473);
+        z-index:99;
+        transition: all 0.4s;
+    }
+
+    .nav_bar ul{
+      display: block;
+      margin-top: 20px;
+    }
+
+    .nav_bar a{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+ 
+    
+    }
+ }
  
 
 
