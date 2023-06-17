@@ -105,6 +105,9 @@
     .banner{
         padding-top: 20px;
     }
+    .container_right  {
+        padding-top: 40PX;
+    }
     .container_right img {
         width: 180px;
         height:180px;
@@ -117,6 +120,7 @@
     .container_left{
         justify-content:center;
         min-width: 300px;
+
     }
 
     .banner_text_area h3{
@@ -132,12 +136,19 @@
     .banner_btns_area{
         padding-top: 20px;
         display: flex;
-        gap: 20px;
+        gap: 10px;
+    }
+    .banner_btns_area .dowload,
+    .banner_btns_area .contato {
+        width: 130px;
+        font-size: 0.9rem;
     }
 }
 
 @media(max-width:599px){
-
+    .container_right  {
+       padding-top: 60px;
+    }
     .container_left{
         justify-content: flex-start;
     }
@@ -151,6 +162,9 @@
 @media(max-width:458px){
     .container_right {
         min-width: 290px;
+        height: 35vh;
+        align-items: flex-end;
+
     }
     .container_left{
         min-width: 290px; 

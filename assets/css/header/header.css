@@ -17,7 +17,7 @@ header{
   }
 
   .menu_toggle{
-    background: url(../../image/icone_x.png) no-repeat center / cover ;
+    background: url(../../image/icone_x01.png) no-repeat center / cover ;
   }
 
   .toggle_dark{
@@ -119,9 +119,8 @@ header{
     position: fixed;
     z-index: 9;
     background-color: aliceblue;
-
   }
-
+  
   .nav_bar .logo{
     font-family: var( --font--family--logo) ;
     text-shadow: 1px 3px 3px #000000bb;
