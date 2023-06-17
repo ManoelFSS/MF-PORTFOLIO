@@ -145,6 +145,10 @@ header{
     gap: 30px;
     letter-spacing: 1.4px;
     cursor: pointer;
+    transition: all 0.3s;
+  }
+  .nav_bar ul, ul a:hover{
+    color: var(--menu--color--ativo);
   }
 
   @media(max-width:630px){

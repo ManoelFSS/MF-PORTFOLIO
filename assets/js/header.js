@@ -8,6 +8,9 @@ const nav_bar = document.querySelector('.nav_bar');
 const link = document.querySelectorAll('.nav_bar a');
 const nav = document.querySelector('nav');
 const menu_mobile = document.querySelector('.menu_mobile');
+const btn_contato = document.querySelector('.contato');
+const modal_contato = document.querySelector('.modal_contato');
+const btn_modal_contato_close = document.querySelector('.modal_contato_close');
 
 // btn nave e funçao abre e fecha modal
 icone_nave.addEventListener('click', ()=>{
@@ -30,7 +33,8 @@ toggle_icone.addEventListener('click', ()=>{
     nav.classList.toggle('dark_model');
     toggle_icone.classList.toggle('toggle_icone_fundo');
     body.classList.toggle('dark_model');
-    modal_sobre.classList.toggle('dark_model')
+    modal_sobre.classList.toggle('dark_model');
+    modal_contato.classList.toggle('dark_model');
 
 });
 
@@ -45,6 +49,15 @@ menu_mobile.addEventListener('click', ()=>{
         nav.style.right = '0px'
     }
    
+});
+
+
+btn_modal_contato_close.addEventListener('click', ()=>{
+    modal_contato.style.display = 'none'
+});
+
+btn_contato.addEventListener('click', ()=>{
+    modal_contato.style.display = 'flex'
 });
 
 link.forEach((item)=>{
