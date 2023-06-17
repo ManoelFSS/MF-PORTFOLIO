@@ -68,6 +68,7 @@ header{
     transform: translate(-50%);
     cursor: pointer;
     z-index: 1;
+    color: var( --color--sinze);
   }
   header .icone_nave{
     background: url(../../image/nave.png) no-repeat center / cover;
