@@ -101,7 +101,7 @@
     }
 }
 
-@media(min-width:600px) and (max-width:779px){
+@media(min-width:600px) and (max-width:950px){
     .banner{
         padding-top: 20px;
     }
