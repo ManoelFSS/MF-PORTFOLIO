@@ -65,6 +65,18 @@ link.forEach((item)=>{
         for(let i = 0; i < link.length; i++){
             link[i].classList.remove('ativo');
         }
+
         item.classList.add('ativo');
+        modal_contato.style.display = 'none';
+        modal_sobre.style.height = "";
+        icone_nave.style.bottom = '40px';
+        setTimeout( ()=> icone_nave.classList.remove('nave_rotate'), 600);
+        menu_mobile.classList.toggle("menu_toggle");
+        if( nav.style.right == '0px'){
+            nav.style.right = '-180px'
+        }else{
+            nav.style.right = '0px'
+        }
+       
     });
 });
