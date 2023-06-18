@@ -41,7 +41,7 @@
     box-shadow: inset 4px 4px 8px #202020d3;
 }
 
-.modal_contato .submit{
+.modal_contato .btn_submit{
     width: 100px;
     height: 30px;
     border: none;
@@ -52,9 +52,11 @@
     font-size: 1rem;
     font-weight: 800;
     color: var(--color--sinze);
+    border: solid 2px var( --color--border);
+    background-color: transparent;
 }
 
-.modal_contato .submit:hover{
+.modal_contato .btn_submit:hover{
     transform: scale(1.1);
 }
 

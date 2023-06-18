@@ -97,19 +97,6 @@ header{
     transform: rotate(180deg);
   }
 
-
-  header .modal_sobre{
-    height: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-color: var(--backg--color);
-    z-index: 2;
-    transition: all 0.7s;
-  }
-
   .nav_bar{
     display: flex;
     justify-content: space-between;
