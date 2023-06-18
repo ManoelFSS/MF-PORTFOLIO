@@ -120,7 +120,7 @@ header{
     border-bottom: 3px solid var(--color--border);
     position: fixed;
     z-index: 111;
-    background-color: --backg--color;
+    background-color: var(--backg--color);
   }
   
   .nav_bar .logo{
