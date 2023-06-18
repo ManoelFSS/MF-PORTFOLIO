@@ -37,28 +37,31 @@
   }
 
   .modal_skills_area,  .modal_text_area{
-    text-align: center;
+
     max-width: 380px;
     min-width: 290px;
   }
 
   .modal_skills_area h3, .modal_text_area h3{
     font-size: 2rem;
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
 
   .modal_text_area p{
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
 
   .modal_skills_area img{
     width: 90px;
     height: 90px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+
   }
 
 
-  @media(max-width:749px){
+  @media(max-width:849px){
     .modal_skills_area h3, .modal_text_area h3{
       font-size: 1.4rem;
       padding: 6px  10px;
@@ -66,6 +69,9 @@
 
     .modal_text, .modal_skills {
        min-width: 300px;
+    }
+    .modal_skills{
+      margin-bottom: 40px;
     }
  
     .modal_skills_area img{
@@ -75,12 +81,16 @@
     .modal_text_area{
       display: flex;
       flex-direction: column;
+      justify-content: center;
       text-align: left;
+
     }
 
     .modal_skills_area{
       max-width: 300px;
       min-width: 300px;
+      padding-left: 24px;
+
     }
   
   }
@@ -96,6 +106,7 @@
    }
     .modal_skills_area h3, .modal_text_area h3{
       font-size: 1.8rem;
+      padding-left: 20px;
     }
 
     .modal_skills{
