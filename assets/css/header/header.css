@@ -151,11 +151,17 @@ header{
         z-index:100;
         transition: all 0.4s;
         opacity: 0.8;
+        user-select:none;
+      outline: none;
     }
 
     .nav_bar ul{
       display: block;
       margin-top: 20px;
+      user-select:none;
+      outline: none;
+      position:fixed;
+      z-index:100;
     }
 
     .nav_bar a{
