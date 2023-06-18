@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    border: solid 3px red;
   }
 
   .modal_text{
@@ -24,8 +23,8 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-width: 290px;
-    border: solid 2px blue;
+    min-width: 350px;
+
   }
 
   .modal_skills{
@@ -33,8 +32,8 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-width: 290px;
-    border: solid 2px rgb(218, 134, 8);
+    min-width:350px;
+  
   }
 
   .modal_skills_area,  .modal_text_area{
@@ -45,11 +44,65 @@
 
   .modal_skills_area h3, .modal_text_area h3{
     font-size: 2rem;
-    padding: 10px;
+    padding: 10px 10px;
+  }
+
+  .modal_text_area p{
+    padding: 10px 10px;
   }
 
   .modal_skills_area img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 10px;
+  }
+
+
+  @media(max-width:749px){
+    .modal_skills_area h3, .modal_text_area h3{
+      font-size: 1.4rem;
+      padding: 6px  10px;
+    }
+
+    .modal_text, .modal_skills {
+       min-width: 300px;
+    }
+ 
+    .modal_skills_area img{
+      width: 55px;
+      height: 55px;
+    }
+    .modal_text_area{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .modal_skills_area{
+      max-width: 300px;
+      min-width: 300px;
+    }
+  
+  }
+
+  @media(max-width:605px){
+
+    .modal_text, .modal_skills {
+      width: 100%;
+   }
+
+   .modal_text_area {
+    padding-top: 30px;
+   }
+    .modal_skills_area h3, .modal_text_area h3{
+      font-size: 1.8rem;
+    }
+
+    .modal_skills{
+      align-items: flex-start;
+    }
+    .modal_skills_area img{
+      width: 60px;
+      height: 60px;
+    }
   }
