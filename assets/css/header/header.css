@@ -152,7 +152,7 @@ header{
         transition: all 0.4s;
         opacity: 0.8;
         user-select:none;
-      outline: none;
+       outline: none;
     }
 
     .nav_bar ul{
