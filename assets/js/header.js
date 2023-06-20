@@ -80,3 +80,62 @@ link.forEach((item)=>{
        
     });
 });
+
+
+const meu_iframe = document.querySelector('.meu_iframe');
+const nav_bar_projetos = document.querySelectorAll('.projetos_sub-menu ul li');
+
+
+
+nav_bar_projetos.forEach((item, index)=>{
+    item.addEventListener('click' , ()=>{
+        for(let i = 0; i < nav_bar_projetos.length; i++){
+            nav_bar_projetos[i].classList.remove('projeto_ativo');
+        }
+        item.classList.add('projeto_ativo')
+
+
+        switch (index) {
+            case 0:
+                meu_iframe.src = 'https://decodificador-seven.vercel.app/';
+                break;
+            case 1:
+                meu_iframe.src = 'https://pepsiplk.netlify.app/';
+                break;
+            case 2:
+                meu_iframe.src = 'https://todolist-phi-pink.vercel.app/';
+                break;
+            case 3:
+                meu_iframe.src = 'https://4g4iu1.csb.app/';
+            break;
+            case 4:
+                meu_iframe.src = 'https://calc-imc-orpin.vercel.app/';
+            break;
+            case 5:
+                meu_iframe.src = 'https://aquamarine-sherbet-91f7dd.netlify.app/';
+            break;
+            case 6:
+                meu_iframe.src = 'https://gudivnw.vercel.app/';
+            break;
+            case 7:
+                meu_iframe.src = 'https://simulador-auditivo.vercel.app/';
+            break;
+            default:
+               console.log("iframe invalido")
+            break;
+        }
+    });
+});
+
+
+const icone_menu_projeto = document.querySelector('.menu_projetos');
+const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
+
+icone_menu_projeto.addEventListener('click', ()=>{
+    if( projetos_sub_menu.style.left = '180px'){
+        projetos_sub_menu.style.left = '0px'
+    }else{
+        projetos_sub_menu.style.left = '-180px'
+    }
+   
+});
