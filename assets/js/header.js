@@ -84,7 +84,8 @@ link.forEach((item)=>{
 
 const meu_iframe = document.querySelector('.meu_iframe');
 const nav_bar_projetos = document.querySelectorAll('.projetos_sub-menu ul li');
-
+const icone_menu_projeto = document.querySelector('.menu_projetos');
+const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
 
 
 nav_bar_projetos.forEach((item, index)=>{
@@ -93,6 +94,13 @@ nav_bar_projetos.forEach((item, index)=>{
             nav_bar_projetos[i].classList.remove('projeto_ativo');
         }
         item.classList.add('projeto_ativo')
+        icone_menu_projeto.classList.toggle('menu_projetosBackground')
+
+        if( projetos_sub_menu.style.left === '0px'){
+            projetos_sub_menu.style.left = '-180px'
+        }else{
+            projetos_sub_menu.style.left = '0px'
+        } 
 
 
         switch (index) {
@@ -127,9 +135,6 @@ nav_bar_projetos.forEach((item, index)=>{
     });
 });
 
-
-const icone_menu_projeto = document.querySelector('.menu_projetos');
-const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
 
 icone_menu_projeto.addEventListener('click', ()=>{
 
