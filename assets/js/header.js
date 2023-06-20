@@ -87,6 +87,22 @@ const nav_bar_projetos = document.querySelectorAll('.projetos_sub-menu ul li');
 const icone_menu_projeto = document.querySelector('.menu_projetos');
 const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
 
+let larguraTela = window.innerWidth;
+
+function hendlewidth(){
+
+    icone_menu_projeto.classList.toggle('menu_projetosBackground');
+    let largura = window.innerWidth;
+    larguraTela = window.innerWidth;
+    
+
+    if(largura > 765){
+        icone_menu_projeto.classList.toggle('menu_projetosBackground');
+        projetos_sub_menu.style.left = '0px';
+    }
+}
+
+window.addEventListener('resize', hendlewidth);
 
 nav_bar_projetos.forEach((item, index)=>{
     item.addEventListener('click' , ()=>{
@@ -94,14 +110,19 @@ nav_bar_projetos.forEach((item, index)=>{
             nav_bar_projetos[i].classList.remove('projeto_ativo');
         }
         item.classList.add('projeto_ativo')
-        icone_menu_projeto.classList.toggle('menu_projetosBackground')
+         console.log(window.innerWidth) 
 
-        if( projetos_sub_menu.style.left === '0px'){
-            projetos_sub_menu.style.left = '-180px'
-        }else{
-            projetos_sub_menu.style.left = '0px'
-        } 
+         if(larguraTela < 766){
 
+            icone_menu_projeto.classList.toggle('menu_projetosBackground');
+
+            if( projetos_sub_menu.style.left === '0px'){
+                projetos_sub_menu.style.left = '-180px'
+            }else{
+                projetos_sub_menu.style.left = '0px'
+            } 
+         }
+            
 
         switch (index) {
             case 0:
@@ -138,12 +159,15 @@ nav_bar_projetos.forEach((item, index)=>{
 
 icone_menu_projeto.addEventListener('click', ()=>{
 
-    icone_menu_projeto.classList.toggle('menu_projetosBackground')
+    if(larguraTela < 766){
 
-    if( projetos_sub_menu.style.left === '0px'){
-        projetos_sub_menu.style.left = '-180px'
-    }else{
-        projetos_sub_menu.style.left = '0px'
-    } 
-   
+        icone_menu_projeto.classList.toggle('menu_projetosBackground')
+
+        if( projetos_sub_menu.style.left === '0px'){
+            projetos_sub_menu.style.left = '-180px'
+        }else{
+            projetos_sub_menu.style.left = '0px'
+        } 
+     }
 });
+
