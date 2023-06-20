@@ -84,11 +84,7 @@
 .projetos_container .meu_iframe{
     width: 100%;
     height: calc(100vh);
-
-
 }
-
-
 
 @media(max-width:765px){
     .projetos_sub-menu ul{
@@ -117,4 +113,10 @@
 
     }
  
+}
+
+@media(min-width:600px) and (max-width:850px){
+    .projetos_container .meu_iframe{
+        height: calc(200vh);
+    }
 }
