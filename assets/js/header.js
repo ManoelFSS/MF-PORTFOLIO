@@ -132,10 +132,13 @@ const icone_menu_projeto = document.querySelector('.menu_projetos');
 const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
 
 icone_menu_projeto.addEventListener('click', ()=>{
-    if( projetos_sub_menu.style.left = '180px'){
-        projetos_sub_menu.style.left = '0px'
-    }else{
+
+    icone_menu_projeto.classList.toggle('menu_projetosBackground')
+
+    if( projetos_sub_menu.style.left === '0px'){
         projetos_sub_menu.style.left = '-180px'
-    }
+    }else{
+        projetos_sub_menu.style.left = '0px'
+    } 
    
 });

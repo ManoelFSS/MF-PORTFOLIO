@@ -1,5 +1,5 @@
 .icone_sub-menu{
-    display: flex;
+    display: none;
     align-items: center;
     width: 100%;
     height: 50px;
@@ -7,10 +7,33 @@
 }
 
 .menu_projetos{
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 99;
+    background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaiHIhEibEUVRoSOBsRCnr2IW7K4csc3urm6adfCyb8ofHYcxU) no-repeat center / cover;
     margin-left: 20px;
+   border-radius: 10px;
+   box-shadow: 1.5px 2.5px 10px #000;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+@media(max-width:765px){
+    .icone_sub-menu{
+        display: flex;
+    }
+    .menu_projetos{
+        display: flex;
+    }
+}
+
+.menu_projetos:hover{
+    transform: scale(1.1);
+}
+.menu_projetosBackground {
+    background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBaEWpLsL02MEcxU9vxNbqoXeYcUpjxyb9KjNdmhSpTTn4WCyc) no-repeat center / cover;
 }
 
 .projetos_sub-menu ul h3{
@@ -75,6 +98,7 @@
         left: -180px;
         text-align: center;
         padding: 20px;
+        transition: all 0.4s;
     }
  
     .projetos_sub-menu ul li{
