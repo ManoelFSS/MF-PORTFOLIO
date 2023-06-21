@@ -88,43 +88,27 @@ const icone_menu_projeto = document.querySelector('.menu_projetos');
 const projetos_sub_menu = document.querySelector('.projetos_sub-menu ul');
 
 let larguraTela = window.innerWidth;
-let icone = false;
+
 
 function hendlewidth(){
     
     let largura = window.innerWidth;
         larguraTela = window.innerWidth;
 
-    if(largura > 765 ){
-       
-        if(icone){
-            icone_menu_projeto.classList.remove('menu_projetosBackground');
-            projetos_sub_menu.style.left = '-0px';
-            
-        }else{
-            projetos_sub_menu.style.left = '0px';
-            icone = false
-        }
-       
+    if(largura > 765){
         
-    } 
+        projetos_sub_menu.style.left = '0px';
+        icone_menu_projeto.classList.add('menu_projetosBackground');
     
-    if(largura < 766){
-        if(!icone){
-          
-            projetos_sub_menu.style.left = '0px';
-            icone_menu_projeto.classList.add('menu_projetosBackground');
-           
-        }else{
-            projetos_sub_menu.style.left = '-180px';
-            icone = true
-        }
-        
-        
-    }
+    }else{
+       
+        projetos_sub_menu.style.left = '-180px';
+        icone_menu_projeto.classList.remove('menu_projetosBackground');
 
+    }
+    
    
-}
+};
 
 window.addEventListener('resize', hendlewidth);
 
@@ -135,7 +119,7 @@ nav_bar_projetos.forEach((item, index)=>{
         }
         item.classList.add('projeto_ativo')
          console.log(window.innerWidth) 
-       
+        
 
          if(larguraTela < 766){
             
